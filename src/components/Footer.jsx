@@ -53,6 +53,14 @@ export default function Footer() {
             Explore
           </div>
           <ul className="space-y-2 text-sm">
+            {/* <li>
+              <Link
+                to={`${import.meta.env.BASE_URL || ""}/`}
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-home"
+              >
+                Home
+              </Link> </li>*/}
             <li>
               <Link
                 to="/"
