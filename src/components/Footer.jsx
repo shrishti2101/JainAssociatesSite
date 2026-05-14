@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { BRAND } from "@/data/brand";
 
@@ -54,120 +54,120 @@ export default function Footer() {
           </div>
           <ul className="space-y-2 text-sm">
             {/* <li>
-              <Link
+              <a
                 to={`${import.meta.env.BASE_URL || ""}/`}
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-home"
+                data-testid="footer-a-home"
               >
                 Home
-              </Link> </li>*/}
+              </a> </li>*/}
             {/* <li>
-              <Link
+              <a
                 to="/"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-home"
+                data-testid="footer-a-home"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/about"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-vision"
+                data-testid="footer-a-vision"
               >
                 Vision & Philosophy
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/team"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-team"
+                data-testid="footer-a-team"
               >
                 Team
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/policy"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-policy"
+                data-testid="footer-a-policy"
               >
                 Privacy Policy
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/calculators"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-calculators"
+                data-testid="footer-a-calculators"
               >
                 Calculators
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/contact"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-contact"
+                data-testid="footer-a-contact"
               >
                 Contact
-              </Link>
+              </a>
             </li> */}
             <li>
-              <Link
+              <a
                 to="/"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-home"
+                data-testid="footer-a-home"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/#/about"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-vision"
+                data-testid="footer-a-vision"
               >
                 Vision & Philosophy
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/#/team"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-team"
+                data-testid="footer-a-team"
               >
                 Team
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/#/policy"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-policy"
+                data-testid="footer-a-policy"
               >
                 Privacy Policy
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/#/calculators"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-calculators"
+                data-testid="footer-a-calculators"
               >
                 Calculators
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 to="/#/contact"
                 className="text-white/80 hover:text-white"
-                data-testid="footer-link-contact"
+                data-testid="footer-a-contact"
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -188,10 +188,10 @@ export default function Footer() {
             ))}
           </ul>
           <a
-            href={BRAND.mapsLink}
+            href={BRAND.mapsa}
             target="_blank"
             rel="noreferrer"
-            data-testid="footer-maps-link"
+            data-testid="footer-maps-a"
             className="mt-4 inline-flex items-center gap-1 text-sm text-white/90 hover:text-white border-b border-white/30 hover:border-white pb-0.5"
           >
             View on Google Maps <ArrowUpRight className="h-4 w-4" />
