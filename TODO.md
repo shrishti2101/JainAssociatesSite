@@ -1,0 +1,4 @@
+- [ ] Gather more context on routing setup (confirm HashRouter usage and routes exist)
+- [ ] Fix Footer routing links so they correctly use react-router Link paths under HashRouter
+- [ ] Ensure no links incorrectly prepend BASE_URL
+- [ ] Run quick dev/build check (lint/build) to confirm no runtime errors

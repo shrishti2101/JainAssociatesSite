@@ -61,7 +61,7 @@ export default function Footer() {
               >
                 Home
               </Link> </li>*/}
-            <li>
+            {/* <li>
               <Link
                 to="/"
                 className="text-white/80 hover:text-white"
@@ -109,6 +109,60 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-contact"
+              >
+                Contact
+              </Link>
+            </li> */}
+            <li>
+              <Link
+                to="/"
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-home"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#/about"
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-vision"
+              >
+                Vision & Philosophy
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#/team"
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-team"
+              >
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#/policy"
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-policy"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#/calculators"
+                className="text-white/80 hover:text-white"
+                data-testid="footer-link-calculators"
+              >
+                Calculators
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#/contact"
                 className="text-white/80 hover:text-white"
                 data-testid="footer-link-contact"
               >

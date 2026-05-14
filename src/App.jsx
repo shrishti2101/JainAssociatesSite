@@ -1,6 +1,6 @@
 import React from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -22,7 +22,7 @@ function ScrollToTop() {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <main>
@@ -38,7 +38,7 @@ function App() {
         </main>
         <Footer />
         <Toaster richColors closeButton position="top-right" />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
