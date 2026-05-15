@@ -1,7 +1,14 @@
 import React from "react";
-import { a } from "react-router-dom";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { BRAND } from "@/data/brand";
+
+const baseHref = import.meta.env.BASE_URL || "/";
+const siteLink = (path) => {
+  const hashPath = path.startsWith("#")
+    ? path
+    : `#${path.startsWith("/") ? path : `/${path}`}`;
+  return `${baseHref.replace(/\/$/, "")}${hashPath}`;
+};
 
 export default function Footer() {
   return (
@@ -117,7 +124,7 @@ export default function Footer() {
             </li> */}
             <li>
               <a
-                to="/"
+                href={baseHref}
                 className="text-white/80 hover:text-white"
                 data-testid="footer-a-home"
               >
@@ -126,7 +133,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                to="/#/about"
+                href={siteLink("/about")}
                 className="text-white/80 hover:text-white"
                 data-testid="footer-a-vision"
               >
@@ -135,7 +142,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                to="/#/team"
+                href={siteLink("/team")}
                 className="text-white/80 hover:text-white"
                 data-testid="footer-a-team"
               >
@@ -144,7 +151,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                to="/#/policy"
+                href={siteLink("/policy")}
                 className="text-white/80 hover:text-white"
                 data-testid="footer-a-policy"
               >
@@ -153,7 +160,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                to="/#/calculators"
+                href={siteLink("/calculators")}
                 className="text-white/80 hover:text-white"
                 data-testid="footer-a-calculators"
               >
@@ -162,7 +169,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                to="/#/contact"
+                href={siteLink("/contact")}
                 className="text-white/80 hover:text-white"
                 data-testid="footer-a-contact"
               >
@@ -188,7 +195,7 @@ export default function Footer() {
             ))}
           </ul>
           <a
-            href={BRAND.mapsa}
+            href={BRAND.maps}
             target="_blank"
             rel="noreferrer"
             data-testid="footer-maps-a"
