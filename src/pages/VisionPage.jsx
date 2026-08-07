@@ -37,7 +37,7 @@ export default function VisionPage() {
         </div>
         <div className="md:col-span-5">
           {/* Embedded video placeholder - user can replace with real video */}
-          <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-brand-navy" data-testid="vision-video">
+          {/* <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-brand-navy" data-testid="vision-video">
             <iframe
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
@@ -45,10 +45,10 @@ export default function VisionPage() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
-          </div>
-          <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
+          </div> */}
+          {/* <p className="mt-3 text-xs text-muted-foreground flex items-center gap-2">
             <Play className="h-3.5 w-3.5" /> Replace this placeholder video with your own message — share it from the founder note.
-          </p>
+          </p> */}
         </div>
       </section>
 

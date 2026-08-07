@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import HomePage from "@/pages/HomePage";
 import VisionPage from "@/pages/VisionPage";
 import TeamPage from "@/pages/TeamPage";
+import KnowledgePage from "@/pages/KnowledgePage";
+import KnowledgeArticlePage from "@/pages/KnowledgeArticlePage";
 import CalculatorsPage from "@/pages/CalculatorsPage";
 import Policy from "@/pages/Policy";
 import ContactPage from "@/pages/ContactPage";
@@ -30,6 +32,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<VisionPage />} />
             <Route path="/team" element={<TeamPage />} />
+            <Route path="/knowledge/:section/:article" element={<KnowledgeArticlePage />} />
+            <Route path="/knowledge/:section" element={<KnowledgePage />} />
             <Route path="/calculators" element={<CalculatorsPage />} />
             <Route path="/policy" element={<Policy />} />
             <Route path="/contact" element={<ContactPage />} />
